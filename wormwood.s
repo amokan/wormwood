@@ -1,10 +1,10 @@
-@SHLISP "WORMWOOD" ASSEMBLAGE 
+@SHLISP "WORMWOOD" ASSEMBLAGE
 @COPYLEFT ADAMMOKAN VIA SHBOBO PLZ MUTATE
 
-.thumb                  
+.thumb
 .syntax unified
-.include "wanillaSRAM.s"     
-.section .text  
+.include "wanillaSRAM.s"
+.section .text
 .include "wanillaMACK.s"
 .org 0
 .space 0x8000, 0
