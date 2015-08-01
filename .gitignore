@@ -1,0 +1,7 @@
+*.elf
+*.bin
+*.o
+*.lst
+*.stackdump
+
+.DS_Store
