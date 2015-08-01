@@ -1,7 +1,14 @@
-*.elf
-*.bin
+# Object files
 *.o
+*.ko
+*.obj
+*.elf
+
+# Binary files
+*.bin
+
+# misc files
 *.lst
 *.stackdump
-
 .DS_Store
+*.sublime-workspace

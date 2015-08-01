@@ -1,4 +1,4 @@
-@SHLISP "WANILLA" ASSEMBLAGE 
+@SHLISP "WANILLA" ASSEMBLAGE
 @COPYLEFT SHBOBO PLZ MUTATE
 
 .equ GPIOC_ODR, 0x4001100C
@@ -34,20 +34,20 @@ QUARTEREPEATR = 4
  @mov lispACC, lispRET
  movs lispWOR, lispRET
  ite gt
- .ifeq ARAB 
- movgt lispACC, 0x8000 
+ .ifeq ARAB
+ movgt lispACC, 0x8000
  .else
- movgt lispACC, 0x10000 
+ movgt lispACC, 0x10000
  .endif
  movle lispACC, 0
  POPSEX
- cmp lispWOR, lispRET 
+ cmp lispWOR, lispRET
  @cmp lispACC, lispRET
  ite gt
- .ifeq ARAB 
- movgt lispACC, 0x8000 
+ .ifeq ARAB
+ movgt lispACC, 0x8000
  .else
- movgt lispACC, 0x10000 
+ movgt lispACC, 0x10000
  .endif
  movle lispACC,0
  LISPMULADD
@@ -62,12 +62,12 @@ QUARTEREPEATR = 4
  @sxth lispACC, lispACC
  @.else
  @uxth lispACC, lispACC
- @.endif 
+ @.endif
  LISPMULADD
 .endm
 INSTORG OUTLOUTRTRIGMODO, 0
 
-.equ SYSTICK_RELOAD, 0xE000E014 
+.equ SYSTICK_RELOAD, 0xE000E014
 .macro SRATEMULADDTARBUTT
  NUTTS
 4: @  SRATE 0xF4
@@ -97,7 +97,7 @@ INSTORG OUTLOUTRTRIGMODO, 0
  LISPMULADD
 6: @ADD 0xF6
  mov lispACC, 0
- POPSEX 
+ POPSEX
  mov lispACC, lispRET
 1:
  .rept QUARTEREPEATR
@@ -108,7 +108,7 @@ INSTORG OUTLOUTRTRIGMODO, 0
  b 1b
 7: @TARBUTT 0xF7
  SYNTHLOAD lispWOR, GPIOA_IDR
- ldrh lispWOR, [lispWOR] 
+ ldrh lispWOR, [lispWOR]
  tst lispWOR, 2
  HIGHSTATE
  moveq lispACC, 0
@@ -205,7 +205,7 @@ INSTORG SRATEMULADDTARBUTT, 4
  b 7b
 .endm
 INSTORG BENDJUMPPANSHORT, 8
- 
+
 .macro DIRACARABLIGHTS
  and lispMEX, lispMEX, #3
  mov lispACC, 0
