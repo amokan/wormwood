@@ -23,7 +23,7 @@ ORGASM 0x80, wanilla80fourses.s
 ORGASM 0x90, wanilla90slewhel.s
 ORGASM 0xA0, wanillaA0pulse.s
 ORGASM 0xB0, wanillaB0sauce.s
-
+@ORGASM 0xC0, wanillaC0walsh.s
 ORGASM 0xD0, wanillaD0voder.s
 ORGASM 0xE0, wanillaE0dynamo.s
 ORGASM 0xF0, wanillaF0nuts.s
