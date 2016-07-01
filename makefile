@@ -18,10 +18,10 @@ export lnk = $(lnk$(OS)) $(lnkFlags)
 export obj = $(obj$(OS)) $(objFlags)
 
 main:
-	-$(ass) -o wormwood.o wormwood.s
-	-$(lnk) -o wormwood.elf wormwood.o
-	-$(obj) wormwood.elf wormwood.bin
+	-$(ass) -o build/wormwood.o wormwood.s
+	-$(lnk) -o build/wormwood.elf build/wormwood.o
+	-$(obj) build/wormwood.elf build/wormwood.bin
 
 clean:
-	rm -f *.lst *.o *.elf *.*~ *.bin *.stackdump a.out makefile~
+	rm -r build/*
 
